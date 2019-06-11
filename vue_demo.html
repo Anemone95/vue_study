@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Document</title>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+<div id="app">
+    <!-- MVVM中的V -->
+    <p>{{ msg }}</p>
+</div>
+<script type="text/javascript">
+    var vm=new Vue({
+        el: '#app', // 要操控的DOM区域
+        data: { // el 中要用到的数据，MVVM中的M
+            msg: "hello world",
+        }
+    })
+</script>
+
+</body>
+</html>
+
